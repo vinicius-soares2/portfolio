@@ -13,10 +13,11 @@ Aqui vão alguns dos meus melhores trabalhos (pinados no perfil também):
 
 - **[GeradorDeSenhaJS](https://github.com/vinicius-soares2/GeradorDeSenhaJS)**  
   Descrição curta: Gerador de senhas Basicas. Feito com HTML + CSS + JS.  
-  [Demo ao vivo](link-do-vercel/netlify) | [Código](link-repo)
+  [Demo ao vivo](https://nomedofilho.com.br/sites/geradordesenhajs/geradordesenhajs) | [Código](https://github.com/vinicius-soares2/GeradorDeSenhaJS)
 
 - **[RelogioDigitalJs](https://github.com/vinicius-soares2/RelogioDigitalJs)**  
   Descrição curta: Com plano fundo e simples mostra a data e hora e o dia da semana.
+   [Demo ao vivo](https://nomedofilho.com.br/sites/relogiodigitaljs/relogiodigitaljs) | [Código](https://github.com/vinicius-soares2/RelogioDigitalJs)
 
 
 ## Contato
@@ -29,3 +30,4 @@ Aqui vão alguns dos meus melhores trabalhos (pinados no perfil também):
 
 
 Feito com ❤️ e muito café ☕
+
