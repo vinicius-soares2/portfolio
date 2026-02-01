@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tabela Unicode Interativa</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🌐 Tabela Unicode — interativa</h1>
+      <div class="muted" style="margin-left:8px">Veja ranges, copie e exporte</div>
+    </header>
+
+    <div class="card">
+      <div class="controls">
+        <label>Preset
+          <select id="preset">
+            <option value="0-127">Basic Latin U+0000..U+007F</option>
+            <option value="0-255">Latin-1 Supplement U+0000..U+00FF</option>
+            <option value="0-65535">Basic Multilingual Plane U+0000..U+FFFF</option>
+            <option value="0-1114111">All Unicode U+0000..U+10FFFF</option>
+            <option value="0x0370-0x03FF">Greek and Coptic U+0370..U+03FF</option>
+            <option value="0x0400-0x04FF">Cyrillic U+0400..U+04FF</option>
+            <option value="0x0500-0x052F">Cyrillic Supplement</option>
+            <option value="0x2190-0x21FF">Arrows U+2190..U+21FF</option>
+          </select>
+        </label>
+
+        <label>Início (hex ou dec)
+          <input id="start" type="text" value="0x0000" />
+        </label>
+
+        <label>Fim (hex ou dec)
+          <input id="end" type="text" value="0x007F" />
+        </label>
+
+        <label>Página (itens por página)
+          <input id="perPage" type="number" value="128" min="8" max="4096" />
+        </label>
+
+        <div style="display:flex;gap:8px;align-items:flex-end">
+          <button id="load">Carregar</button>
+          <button id="prev" class="secondary">◀ Anterior</button>
+          <button id="next" class="secondary">Próxima ▶</button>
+        </div>
+
+        <label style="margin-left:auto">Buscar (U+hex ou dec)
+          <input id="search" type="text" placeholder="ex: U+0041 or 65" />
+        </label>
+
+        <div style="display:flex;gap:8px;align-items:flex-end">
+          <button id="copyRow" class="secondary">Copiar linha</button>
+          <button id="exportCSV" class="secondary">Exportar CSV</button>
+        </div>
+      </div>
+
+      <div class="notice">Observação: caracteres de controle e alguns glyphs podem não ser renderizados; esses aparecem marcados como &lt;control&gt; ou &lt;unprintable&gt;.</div>
+
+      <div class="table-wrap card" style="margin-top:12px;padding:0;">
+        <table id="chart">
+          <thead>
+            <tr>
+              <th>U+HEX</th>
+              <th>Dec</th>
+              <th>Glyph</th>
+              <th>Name</th>
+              <th>UTF-8 (hex)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="pager">
+        <div class="muted" id="rangeInfo"></div>
+        <div style="margin-left:auto" class="muted" id="pageInfo"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

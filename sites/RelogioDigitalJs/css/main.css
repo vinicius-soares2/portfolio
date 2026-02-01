@@ -1,0 +1,30 @@
+body {
+      background-color: #000;
+      color: #fff;
+      font-family: "Orbitron", Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .relogio {
+      font-size: 5rem;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    .data {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      opacity: 0.8;
+    }

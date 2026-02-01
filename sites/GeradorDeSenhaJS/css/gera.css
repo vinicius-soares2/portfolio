@@ -1,0 +1,54 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #161b22;
+      padding: 20px 24px;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+      text-align: center;
+      width: 320px;
+    }
+    input[type="number"] { width: 60px; text-align:center; }
+    label { display:block; margin-top:8px; font-size:0.95rem; }
+    .controls { margin-top: 12px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
+    button {
+      background: #238636;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    button.secondary {
+      background: #0f1720;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .senha {
+      margin-top: 14px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      word-break: break-all;
+      background: rgba(255,255,255,0.03);
+      padding: 8px;
+      border-radius: 8px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:8px;
+    }
+    .msg-copiado {
+      font-size: 0.85rem;
+      color: #94d3a2;
+      margin-top: 8px;
+      min-height: 18px;
+    }

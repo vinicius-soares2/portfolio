@@ -1,0 +1,16 @@
+  :root{--bg:#0f1720;--card:#0b1220;--text:#e6edf3;--muted:#9aa5b1;--accent:#2ea043}
+  body{margin:0;font-family:Inter,Segoe UI,Helvetica,Arial; background:var(--bg); color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;}
+  .app{width:100%;max-width:900px;}
+  h1{margin:0 0 8px 0;font-size:1.2rem}
+  .card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+  label{display:block;margin-top:10px;color:var(--muted);font-size:0.9rem}
+  textarea, input, select {width:100%;box-sizing:border-box;background:#071018;border:1px solid rgba(255,255,255,0.03);color:var(--text);padding:10px;border-radius:8px;font-family:monospace}
+  .row{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+  .col{flex:1;min-width:240px}
+  button{background:var(--accent);border:none;color:#fff;padding:8px 12px;border-radius:8px;cursor:pointer}
+  button.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+  .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+  .output{margin-top:12px;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;font-family:monospace;white-space:pre-wrap}
+  .muted{color:var(--muted);font-size:0.9rem}
+  .flex-end{display:flex;justify-content:flex-end;gap:8px}
+  .small{font-size:0.85rem;padding:6px 8px;border-radius:6px}

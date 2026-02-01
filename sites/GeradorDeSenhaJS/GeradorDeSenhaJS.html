@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/gera.css">
+  <title>Gerador de Senhas Seguras</title>
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 Gerador de Senhas</h2>
+
+    <label>Tamanho: <input type="number" id="length" value="12" min="4" max="64"></label>
+    <label><input type="checkbox" id="lower" checked> Incluir minúsculas</label>
+    <label><input type="checkbox" id="symbols"> Incluir símbolos</label>
+
+    <div class="controls">
+      <button id="gerar">Gerar Senha</button>
+      <button id="copiar" class="secondary" disabled>Copiar</button>
+    </div>
+
+    <div class="senha" id="resultado">—</div>
+    <div class="msg-copiado" id="status"></div>
+  </div>
+  <script src="./js/gera.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tradutor Hex ⇄ Texto</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="app">
+    <div class="card">
+      <h1>🔁 Tradutor Hex ⇄ Texto</h1>
+      <div class="muted">Converta entre sequência hexadecimal e texto (UTF-8 / ASCII). Aceita 0x, espaços, vírgulas.</div>
+
+      <label>Modo
+        <select id="mode">
+          <option value="hex2text">Hex → Texto</option>
+          <option value="text2hex">Texto → Hex</option>
+        </select>
+      </label>
+
+      <div class="row">
+        <div class="col">
+          <label id="labelInput">Entrada (hex)</label>
+          <textarea id="input" rows="8" placeholder="Ex: 48 65 6c 6c 6f 2c 20 57 6f 72 6c 64"></textarea>
+          <div class="actions">
+            <button id="convert">Converter</button>
+            <button id="clear" class="ghost small">Limpar</button>
+            <button id="paste" class="ghost small">Colar</button>
+            <div style="margin-left:auto" class="muted" id="status"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <label>Opções</label>
+          <div style="display:flex;gap:8px;align-items:center">
+            <label style="flex:1">
+              <input type="checkbox" id="showBytes" checked> Mostrar bytes (hex agrupado)
+            </label>
+            <label style="flex:1">
+              <input type="checkbox" id="spacedHex" checked> Separar bytes com espaço (texto → hex)
+            </label>
+          </div>
+
+          <label>Codificação
+            <select id="encoding">
+              <option value="utf-8">UTF-8 (recomendado)</option>
+              <option value="iso-8859-1">ISO-8859-1 (Latin-1)</option>
+            </select>
+          </label>
+
+          <label>Saída</label>
+          <div class="output" id="output">—</div>
+
+          <div class="actions" style="margin-top:8px">
+            <button id="copyOutput" class="small">Copiar saída</button>
+            <button id="downloadOutput" class="small ghost">Baixar</button>
+            <button id="explain" class="small ghost">Exemplo / Ajuda</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
