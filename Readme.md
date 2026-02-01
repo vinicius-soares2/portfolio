@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=00FF00&center=true&vCenter=true&width=600&lines=Olá!+Eu+sou+Hiromu+Koda;Desenvolvedor+Full-Stack+(ou+sua+área);Apaixonado+por+código+e+anime+🚀" alt="Hiromu Koda typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=Bem-Vindo+Ao+Meu+Portfolio!" alt="Hiromu Koda typing" />
 </div>
 
 ## Sobre mim
@@ -26,5 +26,6 @@ Aqui vão alguns dos meus melhores trabalhos (pinados no perfil também):
 <div align="center">
   <img src="https://github.com/hiromukoda/hiromukoda/blob/main/assets/welcome.gif?raw=true" width="400" alt="Gif legal" />
 </div>
+
 
 Feito com ❤️ e muito café ☕
