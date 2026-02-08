@@ -1,0 +1,82 @@
+/* ---------------- MATRIX FUNDO ---------------- */
+body{
+    margin:0;
+    background:#000;
+    color:#00ff88;
+    font-family:monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* efeito glow */
+*{
+    text-shadow:0 0 6px #00ff88;
+}
+
+/* ---------------- TERMINAL ---------------- */
+.terminal{
+    width:500px;
+    background:#050505;
+    border:2px solid #00ff88;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 25px #00ff88;
+}
+
+/* header */
+h2{
+    margin:0 0 15px;
+}
+
+/* drop */
+.drop{
+    border:1px dashed #00ff88;
+    padding:20px;
+    text-align:center;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+/* input */
+input{
+    width:100%;
+    padding:8px;
+    background:#000;
+    color:#00ff88;
+    border:1px solid #00ff88;
+    margin-bottom:10px;
+}
+
+/* buttons */
+button{
+    width:100%;
+    padding:8px;
+    background:#001a00;
+    color:#00ff88;
+    border:1px solid #00ff88;
+    cursor:pointer;
+    margin-top:6px;
+}
+button:hover{
+    background:#003300;
+}
+
+/* log */
+#log{
+    background:#000;
+    border:1px solid #00ff88;
+    height:150px;
+    overflow:auto;
+    padding:6px;
+    font-size:13px;
+    margin-top:10px;
+}
+
+/* progress */
+progress{
+    width:100%;
+    margin-top:10px;
+}

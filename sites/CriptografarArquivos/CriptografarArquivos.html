@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Arakawa Crypt - Rapid Mode</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+
+<style>
+
+</style>
+</head>
+
+<body>
+
+<div class="terminal">
+
+<h2>⚡ ARAKAWA CRYPT — RAPID MODE</h2>
+
+<div class="drop" id="drop">[ arraste arquivos aqui ]</div>
+<input type="file" id="file" multiple hidden>
+
+<input type="password" id="password" placeholder="senha secreta">
+
+<button onclick="encryptAll()">[ CRIPTOGRAFAR ]</button>
+<button onclick="decryptAll()">[ DESCRIPTOGRAFAR ]</button>
+
+<progress id="progress" value="0" max="100"></progress>
+
+<div id="log"></div>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
