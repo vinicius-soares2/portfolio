@@ -1,0 +1,3 @@
+body { font-family: system-ui, sans-serif; }
+    .debt-row { transition: all 0.3s; }
+    .debt-row:hover { background-color: #1f2937; }
